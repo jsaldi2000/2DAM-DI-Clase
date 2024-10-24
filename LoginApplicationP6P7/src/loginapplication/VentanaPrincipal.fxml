@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1049.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.VentanaPrincipalController">
+    <children>
+        <!-- Top Bar -->
+        <Pane prefHeight="112.0" prefWidth="1049.0" style="-fx-background-color: #0580d7;">
+            <children>
+                <Label layoutX="297.0" layoutY="1.0" prefHeight="111.0" prefWidth="456.0" text="Mi Aplicación">
+                    <font>
+                        <Font size="76.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+
+        <!-- Left Side Menu -->
+        <VBox alignment="TOP_CENTER" layoutY="112.0" prefHeight="568.0" prefWidth="200.0" spacing="20" style="-fx-background-color: #ffffff; -fx-border-color: #e0e0e0; -fx-border-width: 0 1 0 0;">
+            <children>
+                <Button fx:id="btnPerfil" onAction="#handlePerfilAction" prefHeight="130.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <ImageView fx:id="btnProfile" fitHeight="81.0" fitWidth="81.0" style="-fx-cursor: hand;">
+                            <Image url="file:/C:/Users/JorgeSaldaña/OneDrive%20-%20Universidad%20Europea/24-25/DI%20(Desarrollo%20de%20Interfaces)/NetBeansWorkspaces/Jorge/JavaFXLoginApplication/src/images/perfil.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="btnTareas" onAction="#handleTareasAction" prefHeight="130.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <ImageView fx:id="btnTasks" fitHeight="86.0" fitWidth="86.0" style="-fx-cursor: hand;">
+                            <Image url="file:/C:/Users/JorgeSaldaña/OneDrive%20-%20Universidad%20Europea/24-25/DI%20(Desarrollo%20de%20Interfaces)/NetBeansWorkspaces/Jorge/JavaFXLoginApplication/src/images/tareas.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="btnArchivos" onAction="#handleArchivosAction" prefHeight="130.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <ImageView fx:id="btnFiles" fitHeight="91.0" fitWidth="91.0" style="-fx-cursor: hand;">
+                            <Image url="file:/C:/Users/JorgeSaldaña/OneDrive%20-%20Universidad%20Europea/24-25/DI%20(Desarrollo%20de%20Interfaces)/NetBeansWorkspaces/Jorge/JavaFXLoginApplication/src/images/ficheros.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="btnSalir" onAction="#handleSalirAction" prefHeight="130.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <ImageView fx:id="btnExit" fitHeight="74.0" fitWidth="64.0" style="-fx-cursor: hand;">
+                            <Image url="file:/C:/Users/JorgeSaldaña/OneDrive%20-%20Universidad%20Europea/24-25/DI%20(Desarrollo%20de%20Interfaces)/NetBeansWorkspaces/Jorge/JavaFXLoginApplication/src/images/salir.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+
+
+        <!-- Main Content Area -->
+        <AnchorPane fx:id="mainContentArea" layoutX="200.0" layoutY="112.0" prefHeight="568.0" prefWidth="849.0" style="-fx-background-color: #f5f5f5;">
+         <children>
+            <AnchorPane fx:id="mainContentArea" prefHeight="568.0" prefWidth="849.0" />
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="849.0" stylesheets="@TaskStyles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.TasksController">
+   <children>
+      <TextField fx:id="txtNuevaTarea" layoutX="22.0" layoutY="26.0" prefHeight="59.0" prefWidth="340.0" />
+      <Button fx:id="btnAniadirTarea" layoutX="380.0" layoutY="28.0" onAction="#handleButtonAniadirTareaAction" style=": ;" text="Añadir Tarea" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font></Button>
+      <ListView fx:id="lvListaTareas" layoutX="22.0" layoutY="109.0" prefHeight="369.0" prefWidth="807.0" />
+      <Button fx:id="btnEliminarTarea" layoutX="320.0" layoutY="495.0" onAction="#handleButtonBorrarTareaAction" text="Eliminar Tarea" />
+      <Button fx:id="btnMarcarCompletada" layoutX="553.0" layoutY="495.0" onAction="#handleButtonMarcarCompletadaAction" text="Marcar Completada" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+usuario1,Jorge,Saldaña Alegre,jorge.saldana@universidadeuropea.es,Calle del Tajo 8477,usuario1.png
+usuario2,Juan,Pérez,juan.perez@gmail.com,Calle Falsa 123,usuario1.png
+usuario3,Maria,López,maria.lopez@gmail.com,Calle Luna 789,usuario2.png
+alba.lopez,Alba,López de Sanagustín,albalopez98@gmail.com,Calle de las Heras 24,alba.lopez.png

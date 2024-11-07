@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.ProfileController">
+   <children>
+      <Pane prefHeight="568.0" prefWidth="849.0">
+         <children>
+            <Button fx:id="btnCambiarImagen" layoutX="60.0" layoutY="36.0" mnemonicParsing="false" onMouseClicked="#handleButtonCambiarImagenAction" style="-fx-border-color: transparent; -fx-background-color: transparent;" textFill="TRANSPARENT">
+               <graphic>
+                  <ImageView fx:id="imgAvatar" fitHeight="154.0" fitWidth="155.0" onMouseClicked="#handleButtonCambiarImagenAction">
+                     <image>
+                        <Image url="@images/perfil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button> <!-- Campo de texto para la contraseña actual -->
+            <PasswordField fx:id="txtPasswordNuevo" layoutX="287.0" layoutY="415.0" prefHeight="25.0" prefWidth="498.0" promptText="Escribe tu nueva contraseña">
+               <font>
+                  <Font size="24.0" />
+               </font></PasswordField> <!-- Campo de texto para el correo electrónico -->
+            <Label layoutX="287.0" layoutY="388.0" text="Cambiar Contraseña: " textFill="#bcbcbc">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="txtEmail" layoutX="287.0" layoutY="315.0" prefHeight="25.0" prefWidth="498.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <TextField fx:id="txtNombre" layoutX="287.0" layoutY="72.0" prefHeight="25.0" prefWidth="498.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField> <!-- Imagen de perfil del usuario -->
+            <Label layoutX="287.0" layoutY="44.0" text="Nombre: " textFill="#bcbcbc">
+               <font>
+                  <Font size="20.0" />
+               </font></Label> <!-- Campo de texto para el nombre del usuario -->
+            <Label layoutX="287.0" layoutY="287.0" text="Email: " textFill="#bcbcbc">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="287.0" layoutY="129.0" text="Apellidos" textFill="#bcbcbc">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="txtApellidos" layoutX="287.0" layoutY="156.0" prefHeight="25.0" prefWidth="498.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Label layoutX="287.0" layoutY="209.0" text="Dirección" textFill="#bcbcbc">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="txtDireccion" layoutX="287.0" layoutY="236.0" prefHeight="47.0" prefWidth="498.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button fx:id="btnGuardarCambios" layoutX="583.0" layoutY="495.0" mnemonicParsing="false" onMouseClicked="#handleButtonGuardarCambiosAction" prefHeight="58.0" prefWidth="202.0" style="-fx-cursor: hand; -fx-background-color: #0580d7; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Guardar" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

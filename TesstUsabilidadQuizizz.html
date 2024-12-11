@@ -5,7 +5,13 @@
 <title>JoinMyQuiz</title>
 <script>
 function abrirVentana() {
-  window.open('https://joinmyquiz.com', '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=' + screen.width + ',height=' + screen.height);
+  const ancho = screen.width;
+  const alto = screen.height;
+  window.open(
+    'https://quizizz.com/join?gc=31180256',
+    '_blank',
+    `toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=${ancho},height=${alto}`
+  );
 }
 </script>
 </head>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "netbeansrealtimedatabaseclase",
+  "private_key_id": "735ee865d53b8255dd3ce9b51a4a36b1627a3c78",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBbN+wr9pX/lz/\nOz37yD4j41NImUL9ZdOeRdgEnlIxoPYxoXg++Ngmp5P6qpLyPHv0sfR3LhrNjgz+\nbbN7AzGvmePzcFiHr6f4J70deVHhd1Zet/YvX8ZWZi0f7xyd00xqBE0xLjAY//9s\nRAm4rtAt8AWBSsnLkZe8R4K5r6W6Smfg7+2ZK++ymcHF5hO5j2qFVqK3FA8D7Q5g\nN6yRX4IdaPcVTepsCCLprLvdBKPxkUj4tTai7Fi+olI7oAY5366/lmDzk5ZvJPEd\n7BT5q+oH0WUh5uugDk7iY4fPA7WbhOFWKuci9IxSxIC4oALR9bQrRf7KBerC4CCI\n/FWi+14RAgMBAAECggEADcdQLflw79i+Ti4traxnhM3yRlcolv10dC9cgoO2rjNd\npk5uzumSGDrSx0X0Xs4hNF6i4ASIQ0FNuqgc43PoS66GNva3T78bE4ndJmbYhtul\n6uxm3JwReGEh8MbrPnDpXhn9V7YHFhjSXKeCG8ZULRmOgtXNhzNRYEelz81r3FfF\n0U0JfSXoPYyKkEBiAUwduXcI/GNxRX3+cX0vu9DKY5BvIcgV9IYwMGCDhVR0FLAC\nQOg4gvNvpyX4xzu5WUgZ9TSppxovUwTPa+TXsRZ48Lyi4Tu+du+RIlZzNp9Z8yC+\nn983f/FJcwfk6gBHzQYDiuC/EMQgxMs5ZfTB6go1ywKBgQDnbvdjPLulZ0PLWweE\nVE1vuztbfJhMZndtrdIrLvfAesCjK5Tj3GEP8aVY8rkHMN3Ai23ZaKtycCh3nKFO\niE9pUbFkihDO4gmTBt6nfbyOKwvKh1LFcXWQzhW10FiIfGHZdsCTHm65Xky5SCwq\n3UglSHdPwLIpG7yelV23sP/3cwKBgQDV9RA2q/u+RiNs5rDsP+96cTsx+9137r0c\nBedtGFk2t6RQZES00plaf5JDXau+eAoKEBZKb9ux4QtyUAESLAqmsNeWIRT5qOaz\ng0GLUYm/NoiXyXTTwRaWHAD3JFZQb9gcihKLHmOx3yU6IjgHXzTOeUmu3wnPCXya\n3VIEzO8LawKBgC934SHnmQ1J6uvQ1e/cYq2iF4CiQ5KYCbLjThIxZfuCsfRFwhoi\nX34nsCRYVH8XFMSjVHqdL10fiA1QgP1ck/0kFmBquRvV3OTdKdnsvjnitl5p9x4s\nMVLsEiPigeYsrN0vsDv8p/U5VD9EgFqiXGPZQy+GdIRd/ggA1uIQWc/lAoGAXT/A\ngEN2pZgGComEpIK9Cd1d0kwWWxYG/7anBYouH8Xr7Em3FCQRSDr/cTLbDllc7sPS\nI0EbPCx8A6dQwC3HupyqaTkj3ie53JUhNOolodvPrm/T5hJqmKO92/jPUaFdTBr1\nOALXqoc5v1t4leXtqut7rKZyrPRShWBeRc9Xg98CgYAjte/Ri/NJmBzVNRfd3rDb\nBc9FnAEa2BA9T+InWEBXpwD0obByHYZ57UKKykh7rlbKMbUQilxDaeuJZ5CXue+O\ncZqzqz8dq0NBJD9liIIZgW09xVDvumJqv58xykR/vjJLqZ/tMrTET7l4cW5HUT6z\nWN/r4JAkHUwv961IT7ZjPg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-yrs0h@netbeansrealtimedatabaseclase.iam.gserviceaccount.com",
+  "client_id": "108911968784395067899",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-yrs0h%40netbeansrealtimedatabaseclase.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

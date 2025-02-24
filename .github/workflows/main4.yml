@@ -1,0 +1,51 @@
+name: Build ConexionSQLiteDocumentadoClase JAR
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Download JavaFX SDK
+        run: |
+          mkdir -p libs
+          wget https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_linux-x64_bin-sdk.zip -P libs
+          unzip libs/openjfx-22.0.1_linux-x64_bin-sdk.zip -d libs/javafx
+
+      - name: Compile the project with JavaFX
+        run: |
+          mkdir out
+          javac --module-path libs/javafx/javafx-sdk-22.0.1/lib --add-modules javafx.controls,javafx.fxml -d out $(find ./ConexionSQLiteDocumentadoClase/src -name "*.java")
+
+      - name: Copy FXML resources to output directory
+        run: |
+          cp ./ConexionSQLiteDocumentadoClase/src/conexionsqlitedocumentadoclase/*.fxml out/conexionsqlitedocumentadoclase/
+
+      - name: Clean old manifests
+        run: |
+          find out/ -type f -name "MANIFEST.MF" -delete
+
+      - name: Package JAR without SQLite
+        run: |
+          echo "Main-Class: conexionsqlitedocumentadoclase.ConexionSQLite" > manifest.txt
+          jar cvfm ConexionSQLiteDocumentadoClase.jar manifest.txt -C out/ .
+
+      - name: Upload JAR as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ConexionSQLiteDocumentadoClase
+          path: ConexionSQLiteDocumentadoClase.jar

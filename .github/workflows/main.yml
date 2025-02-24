@@ -32,6 +32,10 @@ jobs:
           mkdir out
           javac --module-path libs/javafx/javafx-sdk-22.0.1/lib --add-modules javafx.controls,javafx.fxml -cp "libs/sqlite-jdbc-3.47.2.0.jar" -d out $(find ./ConexionSQLiteDocumentadoClase/src -name "*.java")
 
+      - name: Clean old manifests
+        run: |
+          find out/ -name "MANIFEST.MF" -delete
+
       - name: Package JAR with JavaFX and SQLite JDBC
         run: |
           echo "Main-Class: conexionsqlitedocumentadoclase.ConexionSQLite" > manifest.txt
@@ -42,5 +46,6 @@ jobs:
         with:
           name: ConexionSQLiteDocumentadoClase
           path: ConexionSQLiteDocumentadoClase.jar
+
 
 

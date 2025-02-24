@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Actualización a v4
 
       - name: Set up Java 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4  # Actualización a v4
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -36,7 +36,8 @@ jobs:
           jar cvfm ConexionSQLiteDocumentadoClase.jar manifest.txt -C out/ . -C libs sqlite-jdbc-3.47.2.0.jar
 
       - name: Upload JAR as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Actualización a v4
         with:
           name: ConexionSQLiteDocumentadoClase
           path: ConexionSQLiteDocumentadoClase.jar
+
